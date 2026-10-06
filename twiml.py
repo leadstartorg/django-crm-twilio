@@ -109,7 +109,7 @@ class TwilioTwiML(View):
         twiml = (
             '<?xml version="1.0" encoding="UTF-8"?>'
             "<Response>"
-            f'<Dial callerId="{caller_id}">'
+            f'<Dial callerId="{caller_id}" record="record-from-answer-dual">'
             f"<Number>{to_number}</Number>"
             "</Dial>"
             "</Response>"
